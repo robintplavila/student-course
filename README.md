@@ -1,1 +1,1 @@
-# student-course
+# Student Management System
