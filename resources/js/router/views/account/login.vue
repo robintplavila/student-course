@@ -57,7 +57,7 @@ export default {
                     icon: "success",
                     title: this.$t(response.data.message),
                 });
-                this.$router.push('/students')               
+                this.$router.push('/dashboard')               
                 
             })
             .catch(errors => {                

@@ -12,9 +12,9 @@ export const routes = [
         path: '/users',
         name: 'users',
         component: () => import('./views/users/index'),
-        // meta: {
-        //     auth: true
-        // }
+        meta: {
+            auth: true
+        }
 
     },
     {
@@ -66,9 +66,9 @@ export const routes = [
         path: '/students',
         name: 'students',
         component: () => import('./views/students/index'),
-        // meta: {
-        //     auth: true
-        // }
+        meta: {
+            auth: true
+        }
 
     },
     {
@@ -116,5 +116,42 @@ export const routes = [
         // }
 
     } ,
+
+    {
+        path: '/results',
+        name: 'results',
+        component: () => import('./views/results/index'),
+        // meta: {
+        //     auth: true
+        // }
+
+    },
+    {
+        path: '/new-result',
+        name: 'new-result',
+        component: () => import('./views/results/results'),
+        // meta: {
+        //     auth: true
+        // }
+
+    },
+    {
+        path: '/edit-result/:id',
+        name: 'edit-result',
+        component: () => import('./views/results/results'),
+        // meta: {
+        //     auth: true
+        // }
+
+    } ,
+    {
+        path: '/dashboard',
+        name: 'dashboard',
+        component: () => import('./views/dashboard/index'),
+        // meta: {
+        //     auth: true
+        // }
+
+    },
 
 ]

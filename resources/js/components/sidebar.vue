@@ -71,7 +71,7 @@ $(document).on("click", ".button-menu-mobile", function (e) {
         </li>
         <li class="side-nav-item">                            
             <router-link class="side-nav-link" tag="a" to="/students"> 
-              <i class="uil-calender"></i><span>Students</span>
+              <i class="mdi mdi-account-multiple"></i><span>Students</span>
             </router-link>
         </li>
         <li class="side-nav-item">                            

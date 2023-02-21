@@ -16,7 +16,7 @@ export default {
       baseurl : process.env.MIX_BASE_URL,
       token: localStorage.getItem("token"),
       CurrentUser:{},
-      username:'Admin',//localStorage.getItem('uname')!='null' && localStorage.getItem('uname')!='undefined' && localStorage.getItem('uname')!=''? localStorage.getItem('uname'):'User',
+      username:localStorage.getItem('uname')!='null' && localStorage.getItem('uname')!='undefined' && localStorage.getItem('uname')!=''? localStorage.getItem('uname'):'User',
       useremail:localStorage.getItem('uemail'),
       user_role:localStorage.getItem('role_name') ?localStorage.getItem('role_name') :'admin' ,
       role_key: localStorage.getItem("role_key")

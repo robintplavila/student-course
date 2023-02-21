@@ -94,4 +94,16 @@ class CourseController extends BaseController
         $course->delete();
         return $this->sendResponse($course, 'Course has been Deleted');
     }
+
+    public function getCourse()
+    {
+        $courses = Course::select('id as value', 'course_name as label')->orderBy('course_name')->get();
+        return response()->json($courses);
+    }
+
+    public function getCourseCount()
+    {
+        $courses = Course::select('id as value', 'course_name as label')->orderBy('course_name')->count();
+        return response()->json($courses);
+    }
 }

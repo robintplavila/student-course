@@ -15,15 +15,7 @@ class UserController extends BaseController
     {
         $this->middleware('auth:api');
     }
-
-    // public function index()
-    // {
-    //     $todos = User::all();
-    //     return response()->json([
-    //         'status' => 'success',
-    //         'todos' => $todos,
-    //     ]);
-    // }
+    
 
     public function index(Request $request)
     {
@@ -134,5 +126,20 @@ class UserController extends BaseController
         $user = User::findOrFail($userId);
         $user->delete();
         return $this->sendResponse($user, 'User has been Deleted');
+    }
+
+    public function getStudent()
+    {
+        $users = User::select('id as value', 'name as label')
+        ->where('users.role_id', '=', UserRole::where('user_roles.role_key', '=', 'student')->first()->id)
+        ->orderBy('name')->get();
+        return response()->json($users);
+    }
+    public function getStudentCount()
+    {
+        $users = User::select('id as value', 'name as label')
+        ->where('users.role_id', '=', UserRole::where('user_roles.role_key', '=', 'student')->first()->id)
+        ->orderBy('name')->count();
+        return response()->json($users);
     }
 }

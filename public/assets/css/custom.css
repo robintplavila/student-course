@@ -1574,3 +1574,6 @@ body[data-leftbar-theme=dark] .side-nav .side-nav-forth-level li a, body[data-le
     top: 0;
     left: 0;
 }
+.multiselect-wrapper{
+    min-height: auto !important;
+}

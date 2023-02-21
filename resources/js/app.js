@@ -51,6 +51,29 @@ router.beforeEach((to, _from, next) => {
 
 });
 
+axios.interceptors.response.use(
+  response => {
+    return response
+  },
+  error => {
+    if (error.response.status === 401) {
+        localStorage.removeItem('token')
+        localStorage.removeItem('uname')
+        localStorage.removeItem('uemail')   
+        localStorage.clear();               
+        window.location.href='/login'
+        }
+    if (error.response.status === 419) {
+          localStorage.removeItem('token')
+          localStorage.removeItem('uname')
+          localStorage.removeItem('uemail')  
+          localStorage.clear();         
+          window.location.href='/login'
+    }
+    return Promise.reject(error)
+  }
+)
+
 axios.defaults.baseURL = process.env.MIX_API_URL
 window.vm = app.mount("#app");
 

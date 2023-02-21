@@ -88,6 +88,18 @@
     "Course Name":"Course Name",
     "Course has been deleted":"Course has been deleted"
   },  
+  "results": {
+    "title":"Results",
+    "edit-result":"Update Result",
+    "create-result":"Create Result",
+    "Course name is required":"Course name is required",
+    "Student is required":"Student is required",
+    "Score is required":"Score is required",
+    "Course":"Course",
+    "Student":"Student",
+    "Score":"Score",
+    "Result has been deleted":"Result has been deleted"
+  }, 
   "Search...": "Search...",
   "Ok":"Ok",
   "Actief":"Active",
