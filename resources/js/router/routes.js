@@ -93,9 +93,9 @@ export const routes = [
         path: '/courses',
         name: 'courses',
         component: () => import('./views/courses/index'),
-        // meta: {
-        //     auth: true
-        // }
+        meta: {
+            auth: true
+        }
 
     },
     {
@@ -121,9 +121,9 @@ export const routes = [
         path: '/results',
         name: 'results',
         component: () => import('./views/results/index'),
-        // meta: {
-        //     auth: true
-        // }
+        meta: {
+            auth: true
+        }
 
     },
     {
@@ -148,9 +148,9 @@ export const routes = [
         path: '/dashboard',
         name: 'dashboard',
         component: () => import('./views/dashboard/index'),
-        // meta: {
-        //     auth: true
-        // }
+        meta: {
+            auth: true
+        }
 
     },
 

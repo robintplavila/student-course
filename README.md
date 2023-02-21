@@ -6,7 +6,7 @@ Backe-end : Laravel 10
 
 Database  : MySQL
 
-Theme     : Hyper Template Bootstrap 5
+Theme     : Hyper Template Bootstrap 5     
 
 Clone the project
 
@@ -51,3 +51,22 @@ Start the server
     php artisan serve
     npm run dev or npm run build
 ```
+
+Start the server
+
+```bash
+    php artisan serve
+    npm run dev or npm run build
+```
+
+Login (http://127.0.0.1:8000/login)
+
+
+```bash
+    username: admin@admin.com
+    password: password
+```
+
+Dashboard (http://127.0.0.1:8000/dashboard)
+
+Student (http://127.0.0.1:8000/students)
