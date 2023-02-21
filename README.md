@@ -52,13 +52,6 @@ Start the server
     npm run dev or npm run build
 ```
 
-Start the server
-
-```bash
-    php artisan serve
-    npm run dev or npm run build
-```
-
 Login (http://127.0.0.1:8000/login)
 
 
